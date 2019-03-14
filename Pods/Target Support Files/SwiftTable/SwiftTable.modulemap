@@ -1,0 +1,6 @@
+framework module SwiftTable {
+  umbrella header "SwiftTable-umbrella.h"
+
+  export *
+  module * { export * }
+}

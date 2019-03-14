@@ -1,0 +1,24 @@
+PODS:
+  - Changeset (2.0.1)
+  - OrderedObjectSet (3.0.1)
+  - SwiftTable (0.4.2):
+    - OrderedObjectSet (~> 3.0.0)
+
+DEPENDENCIES:
+  - Changeset (= 2.0.1)
+  - SwiftTable (= 0.4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Changeset
+    - OrderedObjectSet
+    - SwiftTable
+
+SPEC CHECKSUMS:
+  Changeset: 3ba8d783d3bccaf7ca3cb494e4a1027cbbf4c03b
+  OrderedObjectSet: 2ef1c64e1085d5db02602b6c65863b7dd8ff0887
+  SwiftTable: 1f3e48fb37156973fe827a0709cc361016544693
+
+PODFILE CHECKSUM: f5645d0d69fdf3e14565c972df3dc8a64cf13985
+
+COCOAPODS: 1.5.3

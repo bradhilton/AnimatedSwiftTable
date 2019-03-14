@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A2C94F031C777B620043535F /* AnimatedSwiftTable.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C94F021C777B620043535F /* AnimatedSwiftTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2C94F0B1C777CD40043535F /* AnimatedMultiTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C94F0A1C777CD40043535F /* AnimatedMultiTable.swift */; };
+		DEBB138A0133F48AFFA7F8C7 /* Pods_AnimatedSwiftTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8DB3956847ACE1571DA872 /* Pods_AnimatedSwiftTable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F8DB3956847ACE1571DA872 /* Pods_AnimatedSwiftTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedSwiftTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957B9E58A1E1BDE0F9C86CEB /* Pods-AnimatedSwiftTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedSwiftTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedSwiftTable/Pods-AnimatedSwiftTable.release.xcconfig"; sourceTree = "<group>"; };
 		A2C94EFF1C777B620043535F /* AnimatedSwiftTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimatedSwiftTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C94F021C777B620043535F /* AnimatedSwiftTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedSwiftTable.h; sourceTree = "<group>"; };
 		A2C94F041C777B620043535F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C94F0A1C777CD40043535F /* AnimatedMultiTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedMultiTable.swift; sourceTree = "<group>"; };
+		F0C9A654E3030B02736F007B /* Pods-AnimatedSwiftTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedSwiftTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedSwiftTable/Pods-AnimatedSwiftTable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBB138A0133F48AFFA7F8C7 /* Pods_AnimatedSwiftTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5766E1D8D1D47B3699DB6877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F8DB3956847ACE1571DA872 /* Pods_AnimatedSwiftTable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AB959C9D9FEF2FB8E8C6A88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0C9A654E3030B02736F007B /* Pods-AnimatedSwiftTable.debug.xcconfig */,
+				957B9E58A1E1BDE0F9C86CEB /* Pods-AnimatedSwiftTable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A2C94EF51C777B620043535F = {
 			isa = PBXGroup;
 			children = (
 				A2C94F011C777B620043535F /* AnimatedSwiftTable */,
 				A2C94F001C777B620043535F /* Products */,
+				7AB959C9D9FEF2FB8E8C6A88 /* Pods */,
+				5766E1D8D1D47B3699DB6877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +74,7 @@
 			children = (
 				A2C94F021C777B620043535F /* AnimatedSwiftTable.h */,
 				A2C94F041C777B620043535F /* Info.plist */,
+				A2C94F0A1C777CD40043535F /* AnimatedMultiTable.swift */,
 			);
 			path = AnimatedSwiftTable;
 			sourceTree = "<group>";
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2C94F071C777B620043535F /* Build configuration list for PBXNativeTarget "AnimatedSwiftTable" */;
 			buildPhases = (
+				B1E1D1470898B8361846F717 /* [CP] Check Pods Manifest.lock */,
 				A2C94EFA1C777B620043535F /* Sources */,
 				A2C94EFB1C777B620043535F /* Frameworks */,
 				A2C94EFC1C777B620043535F /* Headers */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					A2C94EFE1C777B620043535F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -125,11 +154,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1E1D1470898B8361846F717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimatedSwiftTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2C94EFA1C777B620043535F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C94F0B1C777CD40043535F /* AnimatedMultiTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +278,9 @@
 		};
 		A2C94F081C777B620043535F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C9A654E3030B02736F007B /* Pods-AnimatedSwiftTable.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +291,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradhilton.AnimatedSwiftTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		A2C94F091C777B620043535F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957B9E58A1E1BDE0F9C86CEB /* Pods-AnimatedSwiftTable.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -254,6 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradhilton.AnimatedSwiftTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -276,6 +334,7 @@
 				A2C94F091C777B620043535F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
