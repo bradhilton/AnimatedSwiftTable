@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909E52AA4F28584BE5E5BFF5B8C5F10F"
+               BlueprintIdentifier = "F933F453524EEB417E22072E2E093295"
                BuildableName = "Pods_AnimatedSwiftTable.framework"
                BlueprintName = "Pods-AnimatedSwiftTable"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909E52AA4F28584BE5E5BFF5B8C5F10F"
+            BlueprintIdentifier = "F933F453524EEB417E22072E2E093295"
             BuildableName = "Pods_AnimatedSwiftTable.framework"
             BlueprintName = "Pods-AnimatedSwiftTable"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -12,10 +12,10 @@
 public struct OrderedObjectSet<Element> : Hashable, RandomAccessCollection, MutableCollection {
     
     public typealias SubSequence = ArraySlice<Element>
-    public typealias Indices = DefaultRandomAccessIndices<OrderedObjectSet<Element>>
+    public typealias Indices = DefaultIndices<OrderedObjectSet<Element>>
     
-    internal(set) var array: [ObjectWrapper]
-    internal(set) var set: Set<ObjectWrapper>
+    var array: [ObjectWrapper]
+    var set: Set<ObjectWrapper>
     
     /// Always zero, which is the index of the first element when non-empty.
     public var startIndex: Int {
@@ -65,8 +65,8 @@ public struct OrderedObjectSet<Element> : Hashable, RandomAccessCollection, Muta
         }
     }
     
-    public var hashValue: Int {
-        return set.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(set)
     }
     
 }
